@@ -53,9 +53,9 @@ align-items:center;
 
 text-align:center;
 
-/* background:linear-gradient(-45deg,#1e3a8a,#0284c7,#0ea5e9,#22d3ee); */
+background:linear-gradient(-45deg,#1e3a8a,#0284c7,#0ea5e9,#22d3ee);
 
-background:linear-gradient(-45deg,#0284c7);
+/* background:linear-gradient(-45deg,#0284c7); */
 
 
 background-size:400% 400%;
