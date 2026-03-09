@@ -15,7 +15,6 @@ import WorksPage from "./pages/WorksPage";
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark");
   const location = useLocation();
-
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
