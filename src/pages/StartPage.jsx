@@ -3,29 +3,48 @@ import Counter from "../components/Counter";
 import { services, stats, team } from "../data/siteData";
 
 function StartPage() {
+  const whatsAppLink =
+    "https://wa.me/923104318090?text=Hi%20DevPert%2C%20I%20would%20like%20to%20book%20a%20free%20consultation.";
+
   return (
     <>
       <section className="hero-section">
         <div className="hero-overlay" />
         <div className="hero-content fade-up">
           <span className="hero-badge">Healthcare IT Platform</span>
-          <h1>Smart Healthcare IT Solutions</h1>
+          <h1>
+            YOUR SEARCH
+            <br />
+             ENDS HERE LET&apos;S START BUILDING
+          </h1>
           <p>
-            Automating medical orders, pharmacy workflows, and healthcare
-            platforms with precision.
+            DevPert is a full-service software
+            <br />
+            development company.
           </p>
-          <button type="button">Get Started</button>
+          <a
+            className="hero-cta"
+            href={whatsAppLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Book a Free Consultation
+          </a>
         </div>
       </section>
 
       <section className="section">
         <h2>Our Services</h2>
-        <div className="cards-grid">
-          {services.map((service) => {
+        <div className="cards-grid services-grid-four stagger-grid">
+          {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <article key={service.title} className="glass-card fade-up">
-                <Icon className="card-icon" />
+              <article
+                key={service.title}
+                className="glass-card fade-up"
+                style={{ animationDelay: `${index * 0.08}s` }}
+              >
+                <Icon className="card-icon icon-bounce" />
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
               </article>
@@ -52,12 +71,12 @@ function StartPage() {
 
       <section className="section">
         <h2>Our Team</h2>
-        <div className="cards-grid compact-grid">
+        <div className="cards-grid compact-grid stagger-grid">
           {team.map((member) => {
             const Icon = member.icon;
             return (
               <article key={member.role} className="glass-card fade-up">
-                <Icon className="card-icon" />
+                <Icon className="card-icon icon-bounce" />
                 <h3>{member.role}</h3>
                 <p>{member.description}</p>
               </article>

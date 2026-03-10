@@ -1,7 +1,10 @@
 import {
   FaCode,
+  FaCloud,
+  FaGears,
   FaHospital,
   FaLaptopCode,
+  FaMobileScreenButton,
   FaNotesMedical,
   FaUserDoctor,
   FaUserTie,
@@ -20,18 +23,51 @@ export const navItems = [
 export const services = [
   {
     icon: FaLaptopCode,
-    title: "IT Consulting",
-    description: "Strategic consulting for healthcare technology infrastructure.",
+    title: "Web Development",
+    description:
+      "Deliver high-quality web experiences with robust architecture, polished UI, and business-ready performance.",
+  },
+  {
+    icon: FaGears,
+    title: "DevOps",
+    description:
+      "Enhance delivery speed and product quality with CI/CD automation, infrastructure reliability, and release governance.",
+  },
+  {
+    icon: FaMobileScreenButton,
+    title: "Mobile App Development",
+    description:
+      "Build standout Android and iOS applications with clean UX, secure backends, and scalable mobile architecture.",
+  },
+  {
+    icon: FaCode,
+    title: "Custom Development",
+    description:
+      "Get software tailored to your workflows to improve productivity, reduce manual effort, and streamline operations.",
+  },
+  {
+    icon: FaCloud,
+    title: "Cloud M&M",
+    description:
+      "Simplify cloud migration and management with secure, cost-aware, and performance-optimized cloud operations.",
   },
   {
     icon: FaNotesMedical,
-    title: "Medical Orders",
-    description: "Automation system for managing medical orders efficiently.",
+    title: "QA Testing & Automation",
+    description:
+      "Improve reliability with end-to-end quality assurance, test automation, and measurable release confidence.",
   },
   {
     icon: FaHospital,
-    title: "Healthcare Software",
-    description: "Custom medical software for clinics and suppliers.",
+    title: "Digital Transformation",
+    description:
+      "Digitize and automate core processes to accelerate decisions, improve visibility, and unlock business agility.",
+  },
+  {
+    icon: FaUserDoctor,
+    title: "Dynamics 365 ERP",
+    description:
+      "Drive efficiency and growth with tailored Microsoft Dynamics 365 ERP implementations and custom extensions.",
   },
 ];
 
@@ -45,56 +81,71 @@ export const stats = [
 export const team = [
   {
     icon: FaUserTie,
-    role: "CEO",
-    description: "Technology Strategy",
+    role: "Product Leadership",
+    description: "Strategy, roadmap planning, and stakeholder alignment.",
   },
   {
     icon: FaCode,
-    role: "Developers",
-    description: "Software Engineers",
+    role: "Engineering",
+    description: "Full-stack, mobile, cloud, and platform specialists.",
   },
   {
     icon: FaUserDoctor,
-    role: "Medical Experts",
-    description: "Healthcare Consultants",
+    role: "Domain Consultants",
+    description: "Business analysts and industry experts for solution fit.",
+  },
+  {
+    icon: FaCloud,
+    role: "Cloud Operations",
+    description: "Cloud architecture, optimization, and secure deployments.",
+  },
+  {
+    icon: FaGears,
+    role: "DevOps & Automation",
+    description: "CI/CD pipelines, release engineering, and observability.",
+  },
+  {
+    icon: FaLaptopCode,
+    role: "UI/UX & Frontend",
+    description: "User-first interfaces with fast, accessible web experiences.",
   },
 ];
 
 export const works = [
   {
-    title: "Digital Pharmacy Grid",
+    title: "B2B Marketplace Platform",
     description:
-      "A real-time medicine stock and supplier sync platform for multi-branch pharmacies.",
+      "A high-volume procurement and fulfillment platform with vendor onboarding, pricing intelligence, and order orchestration.",
   },
   {
-    title: "OrderFlow Med",
+    title: "Logistics Control Tower",
     description:
-      "Automated order lifecycle for diagnostics, clinics, and distributor networks.",
+      "A real-time dashboard for route optimization, delivery tracking, and SLA monitoring across distributed operations.",
   },
   {
-    title: "CareHub Dashboard",
+    title: "Field Service Automation",
     description:
-      "Analytics dashboard for patient throughput, billing, and service quality metrics.",
+      "An integrated mobile and web system for workforce scheduling, service reporting, and analytics-driven decisions.",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "DEVPERT gave us complete visibility of our order pipeline and reduced processing delay by 40%.",
-    name: "Aarav S.",
-    title: "Operations Head, MedSupply Chain",
+      "From the start, they showcased a proactive attitude, focusing on every detail and providing smart technical solutions to each challenge. They were not just service providers but true partners in our project, and I am deeply grateful for their exceptional support.",
+    name: "Jennifer Lee",
+    title: "CEO, B2B Marketplace",
   },
   {
     quote:
-      "Their team translated clinical requirements into software faster than expected.",
-    name: "Dr. Neha R.",
-    title: "Director, Sunrise Specialty Clinic",
+      "Incredibly talented and an absolute joy to work with, they supported us through ideation, implementation, and beyond.",
+    name: "Kevin Perry",
+    title: "President, Nistahh",
   },
   {
     quote:
-      "From prototype to deployment, every sprint was transparent and high quality.",
-    name: "Rahul M.",
-    title: "CTO, HealthBridge Network",
+      "Their engineering discipline and communication made the entire delivery cycle faster, smoother, and more predictable.",
+    name: "Amir Khan",
+    title: "Director of Technology, RetailOps Group",
   },
 ];

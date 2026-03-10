@@ -1,50 +1,63 @@
 import {
-  FaFacebook,
+  FaEnvelope,
   FaInstagram,
   FaLinkedin,
   FaLocationDot,
   FaPhone,
+  FaTiktok,
   FaXTwitter,
 } from "react-icons/fa6";
+import { services } from "../data/siteData";
 
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-top">
-        <div>
-          <h4>Address</h4>
+        <div className="footer-company-block">
           <p>
-            <FaLocationDot />
-            402, CareTech Tower, New Delhi, India
+            DevPert is a dynamic, full-service software development company
+            specializing in Generative AI, Web, and Mobile solutions. We work
+            with a diverse range of clients, from emerging startups to large
+            enterprise organizations with over 3,000 employees.
           </p>
-          <p>
-            <FaPhone /> +91 98XXX 45XXX
-          </p>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <ul>
-            <li>Healthcare IT Consulting</li>
-            <li>Medical Order Automation</li>
-            <li>Custom Clinical Software</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Social</h4>
-          <div className="social-links">
-            <a href="#" aria-label="Facebook">
-              <FaFacebook />
-            </a>
-            <a href="#" aria-label="Instagram">
+
+          <div className="social-links footer-social-links">
+            <a href="https://www.instagram.com/devpert" target="_blank" rel="noreferrer" aria-label="Instagram">
               <FaInstagram />
             </a>
-            <a href="#" aria-label="X (Twitter)">
-              <FaXTwitter />
+            <a href="https://www.tiktok.com/@devpert" target="_blank" rel="noreferrer" aria-label="TikTok">
+              <FaTiktok />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/devpert" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
+            <a href="https://x.com/devpert" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
+              <FaXTwitter />
+            </a>
           </div>
+        </div>
+
+        <div>
+          <h4>Solutions</h4>
+          <ul>
+            {services.map((service) => (
+              <li key={service.title}>{service.title}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4>Quick Contact</h4>
+          <p>
+            <FaLocationDot />
+            DHA, Lahore
+          </p>
+          <p>
+            <FaPhone /> +92 310 4318090
+          </p>
+          <p>
+            <FaEnvelope /> info@devpert.com
+          </p>
         </div>
       </div>
       <div className="footer-punch">Code Better. Care Faster. Heal Smarter.</div>

@@ -4,8 +4,8 @@ function TestimonialPage() {
   return (
     <section className="section page-hero">
       <h1>Testimonial</h1>
-      <p>What our partners say after deploying DEVPERT solutions.</p>
-      <div className="cards-grid">
+      <p>What our partners say after working with DevPert.</p>
+      <div className="cards-grid stagger-grid">
         {testimonials.map((item) => (
           <article key={item.name} className="glass-card fade-up">
             <p className="quote">"{item.quote}"</p>

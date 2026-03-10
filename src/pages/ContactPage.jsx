@@ -38,8 +38,15 @@ function ContactPage() {
 
   const onSubmit = (event) => {
     event.preventDefault();
+    console.info("[ContactForm] Submit triggered", {
+      nameLength: formData.name.trim().length,
+      email: formData.email.trim(),
+      messageLength: formData.message.trim().length,
+    });
+
     const nextErrors = validate();
     if (Object.keys(nextErrors).length > 0) {
+      console.warn("[ContactForm] Validation failed", nextErrors);
       setErrors(nextErrors);
       setSent(false);
       return;
@@ -49,10 +56,12 @@ function ContactPage() {
     const body = encodeURIComponent(
       `Name: ${formData.name.trim()}\nEmail: ${formData.email.trim()}\n\nMessage:\n${formData.message.trim()}`
     );
+    const mailtoUrl = `mailto:info@devpert.com?subject=${subject}&body=${body}`;
 
     setErrors({});
     setSent(true);
-    window.location.href = `mailto:info.devpert@gmail.com?subject=${subject}&body=${body}`;
+    console.info("[ContactForm] Opening mail client via URL", mailtoUrl);
+    window.location.href = mailtoUrl;
   };
 
   return (
@@ -63,13 +72,13 @@ function ContactPage() {
         <article className="glass-card">
           <h3>Reach Us</h3>
           <p>
-            <FaLocationDot /> 402, CareTech Tower, New Delhi, India
+            <FaLocationDot /> DHA, Lahore
           </p>
           <p>
-            <FaPhone /> +91 98XXX 45XXX
+            <FaPhone /> +92 310 4318090
           </p>
           <p>
-            <FaEnvelope /> info.devpert@gmail.com
+            <FaEnvelope /> info@devpert.com
           </p>
         </article>
 
