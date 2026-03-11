@@ -80,6 +80,7 @@ main {
   gap: 20px;
 }
 
+/* original */
 /* .logo {
   font-size: 1.5rem;
   font-weight: 700;
@@ -87,21 +88,21 @@ main {
   color: var(--primary);
 } */
 
+
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-
   flex-shrink: 0;
 }
 
 /* Logo image */
 .logo img {
-  height: 40px;       /* adjust this (40–60 ideal for forms) */
-  width: auto;        /* KEEP AUTO */
-  max-width: 250px;   /* prevent overflow */
+  height: 40px;  
+  width: auto;        
+  max-width: 250px;   
   object-fit: contain;
 }
 .logo a {
