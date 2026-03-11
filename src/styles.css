@@ -90,20 +90,31 @@ main {
 .logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: var(--primary);
-  margin: 0%;
-  padding: 0%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  flex-shrink: 0;
 }
 
+/* Logo image */
 .logo img {
-  height: 90px;
-  width: 120px;
+  height: 40px;       /* adjust this (40–60 ideal for forms) */
+  width: auto;        /* KEEP AUTO */
+  max-width: 250px;   /* prevent overflow */
+  object-fit: contain;
+}
+.logo a {
+  display: inline-flex;
+  align-items: center;
 }
 
+/* .logo {
+  border: 2px solid red;
+}
+.logo img {
+  border: 2px solid blue;
+} */
 
 .site-nav {
   display: flex;

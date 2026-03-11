@@ -14,6 +14,8 @@ import {
   FaXmark,
 } from "react-icons/fa6";
 import { navItems } from "../data/siteData";
+import logo from "../images/logop.png";
+
 
 function Header({ theme, onThemeToggle }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +23,15 @@ function Header({ theme, onThemeToggle }) {
   return (
     <header className="site-header">
       <div className="header-main-row">
-        <div className="logo">DEVPERT</div>
+        <div className="logo">
+          
+          <a href="/"  >
+  <img src={logo} alt="DevPert Logo" />
+</a>
+          
+
+          {/* DEVPERT */}
+          </div>
         <nav className={`site-nav ${menuOpen ? "open" : ""}`} aria-label="Main navigation">
           {navItems.map((item) => (
             <NavLink

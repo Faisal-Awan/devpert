@@ -28,7 +28,7 @@ function Footer() {
             <a href="https://www.tiktok.com/@devpert" target="_blank" rel="noreferrer" aria-label="TikTok">
               <FaTiktok />
             </a>
-            <a href="https://www.linkedin.com/company/devpert" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/devpert-solutions/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
             <a href="https://x.com/devpert" target="_blank" rel="noreferrer" aria-label="X (Twitter)">
