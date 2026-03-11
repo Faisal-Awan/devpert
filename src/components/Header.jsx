@@ -14,7 +14,7 @@ import {
   FaXmark,
 } from "react-icons/fa6";
 import { navItems } from "../data/siteData";
-import logo from "../images/logop.png";
+import logo from "../images/logo.png";
 
 
 function Header({ theme, onThemeToggle }) {
