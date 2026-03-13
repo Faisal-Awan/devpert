@@ -20,7 +20,7 @@ function Footer() {
             with a diverse range of clients, from emerging startups to large
             enterprise organizations with over 3,000 employees.
           </p>
-
+{/* Test */}
           <div className="social-links footer-social-links">
             <a href="https://www.instagram.com/devpert" target="_blank" rel="noreferrer" aria-label="Instagram">
               <FaInstagram />
